@@ -24,12 +24,12 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img 
-              src="/logo.png" 
-              alt="NetPros USA" 
-              className="h-10 w-10 object-contain rounded-lg"
+            <img
+              src="/logo.png"
+              alt="NetPros USA"
+              className="h-12 w-12 object-contain rounded-lg"
             />
-            <span className="text-xl font-bold text-foreground">NetPros USA</span>
+            <span className="text-2xl font-bold text-foreground">Netpros USA</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,24 +41,20 @@ export function Header() {
                 className={cn(
                   "px-3 py-2 text-sm font-medium rounded-md transition-colors",
                   location.pathname === link.path
-                    ? "text-primary bg-primary/10"
-                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    ? "bg-primary/10"
+                    : "hover:bg-muted"
                 )}
+                style={{ color: "#f97316" }}
               >
                 {link.name}
               </Link>
             ))}
           </nav>
 
-          {/* Contact Button */}
-          <div className="hidden lg:block">
-            <Button
-              asChild
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              <a href="mailto:welcome@netprosusa.net">Contact Us</a>
-            </Button>
+          {/* Contact Info */}
+          <div className="hidden lg:flex items-center gap-4 text-sm text-muted-foreground">
+            <span>Email: service@netprosusa.net</span>
+            <span>Phone: (713) 936-9808</span>
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,20 +83,18 @@ export function Header() {
                   className={cn(
                     "px-4 py-2 text-sm font-medium rounded-md transition-colors",
                     location.pathname === link.path
-                      ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      ? "bg-primary/10"
+                      : "hover:bg-muted"
                   )}
+                  style={{ color: "#f97316" }}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Button
-                asChild
-                variant="outline"
-                className="mx-4 mt-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                <a href="mailto:welcome@netprosusa.net">Contact Us</a>
-              </Button>
+              <div className="mx-4 mt-4 pt-4 border-t border-border text-sm text-muted-foreground space-y-1">
+                <p>Email: service@netprosusa.net</p>
+                <p>Phone: (713) 936-9808</p>
+              </div>
             </div>
           </nav>
         )}

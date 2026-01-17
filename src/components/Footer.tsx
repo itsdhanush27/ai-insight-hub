@@ -12,9 +12,9 @@ export function Footer() {
               <img
                 src="/logo.png"
                 alt="NetPros USA"
-                className="h-10 w-10 object-contain rounded-lg"
+                className="h-12 w-12 object-contain rounded-lg"
               />
-              <span className="text-xl font-bold text-foreground">NetPros USA</span>
+              <span className="text-2xl font-bold text-foreground">Netpros USA</span>
             </Link>
             <p className="text-muted-foreground text-sm">
               World-class internet consulting services to help businesses thrive in the digital age.
@@ -63,22 +63,16 @@ export function Footer() {
             <h4 className="text-foreground font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a
-                  href="mailto:welcome@netprosusa.net"
-                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-                >
+                <span className="flex items-center gap-2 text-muted-foreground">
                   <Mail className="w-4 h-4" />
-                  welcome@netprosusa.net
-                </a>
+                  service@netprosusa.net
+                </span>
               </li>
               <li>
-                <a
-                  href="tel:+17139369808"
-                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-                >
+                <span className="flex items-center gap-2 text-muted-foreground">
                   <Phone className="w-4 h-4" />
                   (713) 936-9808
-                </a>
+                </span>
               </li>
             </ul>
           </div>

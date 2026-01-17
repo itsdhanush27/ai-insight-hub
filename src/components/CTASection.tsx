@@ -17,31 +17,15 @@ export function CTASection({ ctaText = "Get Started", themeColor }: CTASectionPr
           <p className="text-muted-foreground mb-8">
             Contact our team today and discover how our expert consulting services can help you achieve your goals.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              size="lg"
-              className="group"
-              style={{ backgroundColor: themeColor }}
-            >
-              <a href="mailto:welcome@netprosusa.net">
-                {ctaText}
-                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </a>
-            </Button>
-            
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-border hover:bg-muted"
-            >
-              <a href="tel:+17139369808">
-                <Phone className="mr-2 w-4 h-4" />
-                (713) 936-9808
-              </a>
-            </Button>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-muted-foreground">
+            <span className="flex items-center gap-2">
+              <span className="font-medium text-foreground">Email:</span> service@netprosusa.net
+            </span>
+            <span className="flex items-center gap-2">
+              <Phone className="w-4 h-4" />
+              <span className="font-medium text-foreground">Phone:</span> (713) 936-9808
+            </span>
           </div>
         </div>
       </div>

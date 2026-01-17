@@ -23,9 +23,7 @@ export function ServiceGrid({ services, themeColor }: ServiceGridProps) {
             <div
               key={index}
               className={cn(
-                "p-6 rounded-xl bg-background border border-border",
-                "hover:border-opacity-50 transition-all duration-300",
-                "hover:shadow-lg hover:-translate-y-1"
+                "p-6 rounded-xl bg-background border border-border"
               )}
               style={{
                 borderColor: `${themeColor}30`,

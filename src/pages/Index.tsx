@@ -169,12 +169,13 @@ const Index = () => {
             <p className="text-muted-foreground mb-8">
               With support for over 15 languages and clients in more than 50 countries, we understand the nuances of global digital marketing. Our team brings local expertise to every market we serve.
             </p>
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 group">
-              <a href="mailto:welcome@netprosusa.net">
-                Start Your Global Journey
-                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </a>
-            </Button>
+            <div className="text-lg font-semibold text-foreground mb-4">
+              Start Your Global Journey
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-muted-foreground">
+              <span>Email: service@netprosusa.net</span>
+              <span>Phone: (713) 936-9808</span>
+            </div>
           </div>
         </div>
       </section>

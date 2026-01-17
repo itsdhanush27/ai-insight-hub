@@ -34,7 +34,7 @@ export function BenefitCards({ benefits, themeColor }: BenefitCardsProps) {
               )}
             >
               <div
-                className="w-12 h-1 rounded-full mb-6 transition-all duration-300 group-hover:w-16"
+                className="w-12 h-1 rounded-full mb-6"
                 style={{ backgroundColor: themeColor }}
               />
               <h3 className="text-xl font-bold text-foreground mb-3">
